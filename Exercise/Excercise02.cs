@@ -13,8 +13,7 @@ namespace Exercise
             int sum = 0;
             while (number != 0)
             {
-                int num = number % 10;
-                sum += num;
+                sum += number % 10;
                 number /= 10;
             }
             return sum;

@@ -11,7 +11,6 @@ namespace Exercise
         public String DissectNumber(int number)
         {
             List<int> list = new List<int>();
-            String result = "";
             for (int i = 2; i <= number; i++)
             {
                 while (number % i == 0)
@@ -20,18 +19,7 @@ namespace Exercise
                     number /= i;
                 }
             }
-            for (int i = 0; i < list.Count; i++)
-            {
-                if (i == list.Count - 1)
-                {
-                    result += list.ElementAt(i);
-                }
-                else
-                {
-                    result += list.ElementAt(i) + "*";
-                }
-            }
-            return result;
+            return string.Join("*", list.ToArray());
         }
 
     }

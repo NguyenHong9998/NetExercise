@@ -19,25 +19,13 @@ namespace Exercise
         public String PrintFibonaci(int number)
         {
             List<int> list = new List<int>();
-            String result = "";
             int i = 1;
             while (FibonaciAtN(i) < number)
             {
                 list.Add(FibonaciAtN(i));
                 i++;
             }
-            for (int j = 0; j < list.Count; j++)
-            {
-                if (j == list.Count - 1)
-                {
-                    result += list.ElementAt(j);
-                }
-                else
-                {
-                    result += list.ElementAt(j) + " ";
-                }
-            }
-            return result;
+            return string.Join(" ", list.ToArray());
         }
     }
 }

@@ -13,9 +13,9 @@ namespace Exercise.Test
         [TestMethod]
         public void TesFact()
         {
-            Assert.AreEqual(new Excercise07().Fact(1),1);
-            Assert.AreEqual(new Excercise07().Fact(5),120);
-            Assert.AreEqual(new Excercise07().Fact(0), 1);
+            Assert.AreEqual(new Excercise07().Factorial(1),1);
+            Assert.AreEqual(new Excercise07().Factorial(5),120);
+            Assert.AreEqual(new Excercise07().Factorial(0), 1);
         }
     }
 }

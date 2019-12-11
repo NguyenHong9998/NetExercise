@@ -50,6 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Excercise02Test.cs" />
+    <Compile Include="Excercise03Test.cs" />
+    <Compile Include="Excercise04Test.cs" />
+    <Compile Include="Excercise05Test.cs" />
+    <Compile Include="Excercise06Test.cs" />
+    <Compile Include="Excercise07Test.cs" />
     <Compile Include="Exercise01Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

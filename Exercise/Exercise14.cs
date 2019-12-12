@@ -6,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace Exercise
 {
-    class Program
+    public class Exercise14
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine(SumPrime( new List<int> { 2, 3, 4, 5, 6, 7, 8, 9 }));
-            Console.ReadLine();
-        }
-        public static int SumPrime(List<int> numbers)
+        public int SumPrime(List<int> numbers)
         {
             return numbers.Where(num => isPrime(num)).Sum();
         }
-        public static bool isPrime(int number)
+        public bool isPrime(int number)
         {
             if (number < 2)
             {

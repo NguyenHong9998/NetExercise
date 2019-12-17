@@ -56,6 +56,7 @@
     <Compile Include="Excercise06Test.cs" />
     <Compile Include="Excercise07Test.cs" />
     <Compile Include="Exercise01Test.cs" />
+    <Compile Include="Exercise08Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

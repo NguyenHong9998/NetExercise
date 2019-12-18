@@ -15,6 +15,9 @@ namespace Exercise.Test
         {
             Assert.AreEqual(new Exercise12().SumOfThreeLargestNumbers(new int[] { 1, 2, 8, 7, 9, 11 }), 28);
             Assert.AreEqual(new Exercise12().SumOfThreeLargestNumbers(new int[] { 1, 200, 8, 7, 65, 11 }), 276);
+
+            Assert.AreEqual(new Exercise12().SumOfThreeLargestNumbers(new int[] { 1, 200, 8 }), 209);
+            Assert.AreEqual(new Exercise12().SumOfThreeLargestNumbers(new int[] {  }), 0);
         }
     }
 }

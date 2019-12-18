@@ -10,7 +10,7 @@ namespace Exercise
     {
         public int CountNumber(int[] number)
         {
-            return number.ToList().Where(x => (x % 3 == 0 && x % 5 != 0)).Count();
+            return number.Where(x => (x % 3 == 0 && x % 5 != 0)).Count();
         }
     }
 }

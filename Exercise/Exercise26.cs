@@ -14,10 +14,11 @@ namespace Exercise
             var temp = stringOfCharacters.GroupBy(x => x);
             foreach (var itemGroup in temp)
             {
-                result += itemGroup.Key ;
-                if (itemGroup.Count() != 1)
+                result += itemGroup.Key;
+                int count = itemGroup.Count();
+                if (count != 1)
                 {
-                    result += itemGroup.Count();
+                    result += count;
                 }
             }
             return result;

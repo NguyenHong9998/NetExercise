@@ -10,7 +10,7 @@ namespace Exercise
     {
         public string Reverse(string stringOfCharacters)
         {
-            char[] letters = stringOfCharacters.ToCharArray();
+            var letters = stringOfCharacters.ToCharArray();
             Array.Reverse(letters);
             return new string(letters);
         }

@@ -60,6 +60,7 @@
     <Compile Include="Exercise11Test.cs" />
     <Compile Include="Exercise13Test.cs" />
     <Compile Include="Exercise18Test.cs" />
+    <Compile Include="Exercise25Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

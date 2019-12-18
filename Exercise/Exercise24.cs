@@ -10,7 +10,7 @@ namespace Exercise
     {
         public int SumOfNumbersInString(string stringOfCharacters)
         {
-            string[] items = Regex.Split(stringOfCharacters, @"\D+");
+            var items = Regex.Split(stringOfCharacters, @"\D+");
             int sum = 0;
             foreach (string item in items)
             {

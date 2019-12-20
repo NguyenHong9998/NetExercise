@@ -10,15 +10,7 @@ namespace Exercise
     {
         public string ToUpperCase(string stringOfCharacters)
         {
-            var letters = stringOfCharacters.ToCharArray();
-            for (int i = 0; i < letters.Length; i++)
-            {
-                if (Char.IsLower(letters[i]))
-                {
-                    letters[i] = Char.ToUpper(letters[i]);
-                }
-            }
-            return new string(letters);
+            return stringOfCharacters.ToUpper();
         }
     }
 }

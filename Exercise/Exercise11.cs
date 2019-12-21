@@ -10,29 +10,16 @@ namespace Exercise
     {
         public string DuplicateElement(int[] numbers)
         {
-            int[] check = new int[numbers.Length];
             List<int> list = new List<int>();
-            for (int i = 0; i < numbers.Length; i++)
+            var temp = numbers.GroupBy(x => x);
+            foreach (var group in temp)
             {
-                for (int j = i + 1; j < numbers.Length; j++)
+                if (group.Count() > 1)
                 {
-                    if (check[j] == 1)
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        if (numbers[j] == numbers[i])
-                        {
-                            list.Add(numbers[j]);
-                            check[i] = 1;
-                            check[j] = 1;
-                        }
-                    }
-
+                    list.Add(group.Key);
                 }
             }
-            return string.Join(" ", list.ToArray());
+            return string.Join(" ", list);
         }
     }
 }

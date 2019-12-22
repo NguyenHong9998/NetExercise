@@ -15,6 +15,7 @@ namespace Exercise.Test
         {
             Assert.AreEqual(new Exercise26().CompactString("abbbbbbbbbbbbbc"), "ab13c");
             Assert.AreEqual(new Exercise26().CompactString("abcccceeeeeefd"), "abc4e6fd");
+            Assert.AreEqual(new Exercise26().CompactString("abbccaabbdcc"), "ab2c2a2b2dc2");
             Assert.AreEqual(new Exercise26().CompactString(""), "");
         }
     }

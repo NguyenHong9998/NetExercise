@@ -10,15 +10,26 @@ namespace Exercise
     {
         public string CompactString(string stringOfCharacters)
         {
-            var result = "";
-            var temp = stringOfCharacters.GroupBy(x => x);
-            foreach (var itemGroup in temp)
+            if (String.IsNullOrEmpty(stringOfCharacters))
             {
-                result += itemGroup.Key;
-                int count = itemGroup.Count();
-                if (count != 1)
+                return "";
+            }
+            string result = "";
+            int start = 0;
+            for (int i = 0; i <= stringOfCharacters.Length - 1; i++)
+            {
+                if (i == stringOfCharacters.Length - 1 || stringOfCharacters.ElementAt(i) != stringOfCharacters.ElementAt(i + 1))
                 {
-                    result += count;
+                    int distance = i + 1 - start;
+                    if (distance == 1)
+                    {
+                        result += stringOfCharacters.ElementAt(i).ToString();
+                    }
+                    else
+                    {
+                        result += stringOfCharacters.ElementAt(i).ToString() + distance;
+                    }
+                    start = i + 1;
                 }
             }
             return result;
